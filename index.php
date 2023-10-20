@@ -344,16 +344,15 @@
                 </div>
 
                 <div class="card-body pb-0">
-                  <h5 class="card-title">Top Selling <span>| Today</span></h5>
+                  <h5 class="card-title">UNIVERSIDADES<span>| </span></h5>
 
                   <table class="table table-borderless">
                     <thead>
                       <tr>
-                        <th scope="col">Preview</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Sold</th>
-                        <th scope="col">Revenue</th>
+                
+                        <th scope="col">Nombre</th>
+                        <th scope="col">ubicacion</th>
+                      
                       </tr>
                     </thead>
                     <tbody>
