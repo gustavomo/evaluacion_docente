@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -60,30 +54,21 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Crear una cuenta</h5>
-                    <p class="text-center small">Registrate para crear tu cuenta personal</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Crea una cuenta</h5>
+                    <p class="text-center small">Ingrese sus datos personales para crear una cuenta</p>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Nombre</label>
+                      <label for="yourName" class="form-label">Su nombre</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
                       <div class="invalid-feedback">Por favor, ingresa tu nombre</div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Correo elctronico</label>
+                      <label for="yourEmail" class="form-label">Tu correo electrónico</label>
                       <input type="email" name="email" class="form-control" id="yourEmail" required>
                       <div class="invalid-feedback">Por favor ingresa una cuenta valida</div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Usuario</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Por favor elige tu usuario.</div>
-                      </div>
                     </div>
 
                     <div class="col-12">
@@ -95,15 +80,15 @@
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">IEstoy de acuerdo y acepto los<a href="#"> terminos y condiciones</a></label>
+                        <label class="form-check-label" for="acceptTerms">Estoy de acuerdo y acepto los<a href="#"> términos y condiciones.</a></label>
                         <div class="invalid-feedback">Debes aceptar antes de enviar.</div>
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Crear cuenta</button>
+                      <button class="btn btn-primary w-100" type="button" id="submitButton">Crear una cuenta</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">ya tienes una cuenta? <a href="pages-login.html">ingresa</a></p>
+                      <p class="small mb-0">¿Ya tienes una cuenta? <a href="pages-login.html">Acceso</a></p>
                     </div>
                   </form>
 
@@ -142,6 +127,7 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>

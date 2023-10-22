@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -80,10 +74,10 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Acceso</button>
+                      <button class="btn btn-primary w-100" type="button" id="submitButton">Acceso</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">¿No tienes cuenta? <a href="pages-register.html">Crea una cuenta</a></p>
+                      <p class="small mb-0">¿No tienes cuenta? <a href="/evaluacion_docente/registro/view/">Crea una cuenta</a></p>
                     </div>
                   </form>
 
@@ -114,6 +108,7 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>
