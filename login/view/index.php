@@ -83,7 +83,7 @@
                       <button class="btn btn-primary w-100" type="submit">Acceso</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">¿No tienes cuenta? <a href="pages-register.html">Crea una cuenta</a></p>
+                      <p class="small mb-0">¿No tienes cuenta? <a href="/evaluacion_docente/registro/view/">Crea una cuenta</a></p>
                     </div>
                   </form>
 

@@ -3,7 +3,7 @@
 class configDb {
 
     var $host = 'localhost';
-    var $dbname = "prueba";
+    var $dbname = "evaluacion_docente";
     var $user = "root";
     var $pass = "";
 
