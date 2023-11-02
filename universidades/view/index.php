@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Universidades</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,7 +51,7 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">facultades</a></li>
-          <li class="breadcrumb-item active">Universidad</li>
+          <li class="breadcrumb-item active">Universidades</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

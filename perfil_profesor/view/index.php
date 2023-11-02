@@ -53,6 +53,7 @@
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
           <li class="breadcrumb-item"><a href="index.html">Universidad</a></li>
           <li class="breadcrumb-item"><a href="index.html">Facultades</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Profesores</a></li>
           <li class="breadcrumb-item active">Perfil profesor</li>
         </ol>
       </nav>
