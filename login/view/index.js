@@ -13,6 +13,13 @@ const createUser = () => {
     axios.post('../controller/verify_user.php', form)
         .then(function (response) {
             console.log(response);
+            if (response.data.valido) {
+                localStorage.setItem("usuario", JSON.stringify(response.data.usuario[0]));
+                window.location.href = "/evaluacion_docente/inicio/view/";
+            }
+            else {
+                alert("Credenciales no validas");
+            }
         })
         .catch(function (error) {
             console.log(error);

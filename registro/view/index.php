@@ -88,7 +88,7 @@
                       <button class="btn btn-primary w-100" type="button" id="submitButton">Crear una cuenta</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">¿Ya tienes una cuenta? <a href="pages-login.html">Acceso</a></p>
+                      <p class="small mb-0">¿Ya tienes una cuenta? <a href="/evaluacion_docente/login/view/">Acceso</a></p>
                     </div>
                   </form>
 

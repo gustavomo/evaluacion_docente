@@ -158,19 +158,25 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
   <script>
-   const navbarContainer = document.getElementById('navbar-container');
+    const navbarContainer = document.getElementById('navbar-container');
 
-// Usa la función fetch para cargar el archivo navbar.html
-fetch('../../components/navBaritem.html')
+    // Usa la función fetch para cargar el archivo navbar.html
+    fetch('../../components/navBaritem.html')
     .then(response => response.text())
     .then(html => {
         // Inserta el contenido HTML en el contenedor
         navbarContainer.innerHTML = html;
+        const usuarioString = localStorage.getItem("usuario");
+        const usuario = JSON.parse(usuarioString);
+
+        nombreUsuario = document.getElementById("nombre-usuario");
+        nombreUsuario.innerHTML = usuario.nombre;
     })
     .catch(error => {
         console.error('Error al cargar la barra de navegación:', error);
     });
-</script>
+  </script>
+
 </body>
 
 </html>
