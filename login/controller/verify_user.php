@@ -17,7 +17,7 @@ class EjemploPost {
                 header('Content-Type: application/json');
                
                 if ($response) {
-                    $result = array("valido"=>true);
+                    $result = array("valido"=>true, "usuario"=>$response);
                     echo json_encode($result);
                 }
                 else {

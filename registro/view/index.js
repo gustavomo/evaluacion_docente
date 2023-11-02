@@ -15,6 +15,8 @@ const createUser = () => {
     axios.post('../controller/create_user.php', form)
         .then(function (response) {
             console.log(response);
+            window.location.href = '/evaluacion_docente/login/view/';
+            alert("Usuario creado exitosamente")
         })
         .catch(function (error) {
             console.log(error);
