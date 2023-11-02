@@ -84,7 +84,7 @@
                         <th scope="col">Profesores</th>
                         <th scope="col">Materia(s)</th>
                         <th scope="col">Calificacion global</th>
-                        
+                       
                       </tr>
                     </thead>
                     <tbody>
