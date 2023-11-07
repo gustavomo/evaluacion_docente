@@ -83,17 +83,16 @@
                         <th scope="col"></th>
                         <th scope="col">Profesores</th>
                         <th scope="col">Materia(s)</th>
-                        <th scope="col">Calificacion global</th>
+                        <th scope="col">Calificación global</th>
                        
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><a href="#"><img src="../../assets/img/messages-1.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Federica Peluche</a></td>
-                        <td>APO 2 (Algoritmos y programación 2)</td>
+                        <th scope="row"><a href="#"><img src="../../assets/img/p5.jpg" alt=""></a></th>
+                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php" class="text-primary fw-bold">Carlos Bermúdez Salazar</a></td>
+                        <td>Cirugía / Anatomía</td>
                         <td class="fw-bold">4.1</td>
-                        
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/messages-2.jpg" alt=""></a></th>

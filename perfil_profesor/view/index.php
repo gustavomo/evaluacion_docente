@@ -62,19 +62,20 @@
     <section class="section dashboard">
       <div class="row">
 
-        <!-- Left side columns -->
-        <div class="col-lg-8">
-          <div class="row">
-
-          <!-- foto profesional profesor -->
-          <div>
+      <!-- foto profesional profesor -->
+      <div>
     <div class="card photo">
         <div class="card-body pb-0">
+          <h5 class = "card-title">Carlos Bermúdez Salazar</h5>
             <img src="../../assets/img/p5.jpg" width="100%">
         </div>
     </div>
 </div>
 <!-- End foto profesional profesor -->
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
             
             <!-- Calificacion perfil profesor -->
             <div class="col-12">
@@ -286,7 +287,7 @@
               </div>
             </div><!-- End Proyectos realizados -->
 
-          </div>
+            </div>
         </div><!-- End Left side columns -->
 
         <!-- Right side columns -->
