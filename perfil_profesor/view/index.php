@@ -73,85 +73,6 @@
 </div>
 <!-- End foto profesional profesor -->
 
-        <!-- Left side columns -->
-        <div class="col-lg-8">
-          <div class="row">
-            
-            <!-- Calificacion perfil profesor -->
-            <div class="col-12">
-              <div class="card">
-
-                <div class="filter">
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Calificación perfil profesional</h5>
-
-                  <!-- puntos del grafico -->
-                  <div id="reportsChart"></div>
-
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Titulos profesionales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
-                        }, {
-                          name: 'Experiencia laboral',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Proyectos realizados',
-                          data: [15, 11, 32, 18, 9, 24, 11]
-                        }],
-                        chart: {
-                          height: 350,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: ['#4154f1', '#DC7633', '#707B7C'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 2
-                        },
-                        xaxis: {
-                          type: 'datetime',
-                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End puntos del grafico -->
-
-                </div>
-              </div>
-            </div><!-- End calificacion profesor -->
-
             <!-- Titulos profesionales -->
             <div class="col-12">
               <div class="card recent-sales overflow-auto">
@@ -171,7 +92,7 @@
 
                 <div class="card-body">
                   <h5 class="card-title">Títulos profesionales <span>| Pregrado | Postgrado | Maestría | Cursos externos </span></h5>
-                    <img src="../../assets/img/diploma_pregrado.jpg" width="665">
+                    <img src="../../assets/img/diploma_pregrado.jpg" width="100%">
                 </div>
 
               </div>
@@ -287,11 +208,90 @@
               </div>
             </div><!-- End Proyectos realizados -->
 
+            <!-- Left side columns -->
+        <div class="col-lg-6">
+          <div class="row">
+
+            <!-- Calificacion perfil profesor -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Calificación perfil profesional</h5>
+
+                  <!-- puntos del grafico -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Titulos profesionales',
+                          data: [31, 40, 28, 51, 42, 82, 56],
+                        }, {
+                          name: 'Experiencia laboral',
+                          data: [11, 32, 45, 32, 34, 52, 41]
+                        }, {
+                          name: 'Proyectos realizados',
+                          data: [15, 11, 32, 18, 9, 24, 11]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#DC7633', '#707B7C'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End puntos del grafico -->
+
+                </div>
+              </div>
+            </div><!-- End calificacion profesor -->
+
             </div>
         </div><!-- End Left side columns -->
 
         <!-- Right side columns -->
-        <div class="col-lg-4">
+        <div class="col-lg-6">
 
           <!-- Competencias -->
           <div class="card">

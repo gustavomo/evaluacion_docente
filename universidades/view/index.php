@@ -227,7 +227,7 @@
                     <tbody>
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/ingenieria_p.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Facultad de ingenieria</a></td>
+                        <td><a href="/evaluacion_docente/facultades/view/index.php" class="text-primary fw-bold">Facultad de ingenieria</a></td>
                         <td>24</td>
                         <td class="fw-bold">4.1</td>
                         
@@ -435,8 +435,6 @@
                 <li><a class="dropdown-item" href="#">This Year</a></li>
               </ul>
             </div>
-
-           
 
             <div class="card-body pb-0">
               <h5 class="card-title">Proyectos de facultades </h5>
