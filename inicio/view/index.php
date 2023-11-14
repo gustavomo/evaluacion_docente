@@ -167,10 +167,30 @@
         // Inserta el contenido HTML en el contenedor
         navbarContainer.innerHTML = html;
         const usuarioString = localStorage.getItem("usuario");
-        const usuario = JSON.parse(usuarioString);
+        menuItemIniciarSesion = document.getElementById("menu-item-iniciar-sesion");
+        menuItemCerrarSesion = document.getElementById("menu-item-cerrar-sesion");
 
-        nombreUsuario = document.getElementById("nombre-usuario");
-        nombreUsuario.innerHTML = usuario.nombre;
+        if (usuarioString) {
+          const usuario = JSON.parse(usuarioString);
+
+          nombreUsuario = document.getElementById("nombre-usuario");
+          nombreUsuario.innerHTML = usuario.nombre;
+
+          menuItemIniciarSesion.style.display = "none"
+          menuItemCerrarSesion.style.display = "initial"
+        }
+        else {
+          menuItemIniciarSesion.style.display = "initial"
+          menuItemCerrarSesion.style.display = "none"
+        }
+
+        const cerrarSesion = () => {
+          localStorage.removeItem("usuario");
+          window.location.href = "";
+        }
+
+        const cerrarSesionBoton = document.getElementById("cerrar-sesion-boton");
+        cerrarSesionBoton.addEventListener("click", cerrarSesion);
     })
     .catch(error => {
         console.error('Error al cargar la barra de navegación:', error);

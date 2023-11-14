@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -60,24 +54,25 @@
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
-      <div class="row">
+      <div class="row justify-content-center">
+
+        <div class="col-xl-5">
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+              <img id="foto" src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle img-fluid">
+              <h2 id="nombre">Kevin Anderson</h2>
+              <!-- <h3>Web Designer</h3> -->
+            </div>
+          </div>
+        </div>
 
         <!-- Left side columns -->
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="row">
 
-          <!-- foto profesional profesor -->
-          <div>
-    <div class="card photo">
-        <div class="card-body pb-0">
-            <img src="../../assets/img/p5.jpg" width="100%">
-        </div>
-    </div>
-</div>
-<!-- End foto profesional profesor -->
-            
             <!-- Calificacion perfil profesor -->
-            <div class="col-12">
+            
+            <!-- <div class="col-12">
               <div class="card">
 
                 <div class="filter">
@@ -88,10 +83,10 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Calificación perfil profesional</h5>
+                  <h5 class="card-title">Calificación perfil profesional</h5> -->
 
                   <!-- puntos del grafico -->
-                  <div id="reportsChart"></div>
+                  <!-- <div id="reportsChart"></div>
 
                   <script>
                     document.addEventListener("DOMContentLoaded", () => {
@@ -144,36 +139,38 @@
                         }
                       }).render();
                     });
-                  </script>
+                  </script> -->
                   <!-- End puntos del grafico -->
 
-                </div>
+                <!-- </div>
               </div>
-            </div><!-- End calificacion profesor -->
+            </div> -->
+            
+            <!-- End calificacion profesor -->
 
             <!-- Titulos profesionales -->
             <div class="col-12">
-              <div class="card recent-sales overflow-auto">
+              <div class="card top-selling overflow-auto">
 
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Nivel</h6>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Pregrado</a></li>
-                    <li><a class="dropdown-item" href="#">Postgrado</a></li>
-                    <li><a class="dropdown-item" href="#">Maestría</a></li>
-                    <li><a class="dropdown-item" href="#">Cursos externos</a></li>
-                  </ul>
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Títulos profesionales</h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Titulos</th>
+                        <th scope="col">Fecha egreso</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabla-titulos">
+                      <tr>
+                        <td><a href="#" class="text-primary fw-bold">Sura</a></td>
+                        <td>Médico general</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
                 </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Títulos profesionales <span>| Pregrado | Postgrado | Maestría | Cursos externos </span></h5>
-                    <img src="../../assets/img/diploma_pregrado.jpg" width="665">
-                </div>
-
-              </div>
             </div><!-- End Titulos profesionales -->
 
             <!-- Experiencia laboral -->
@@ -181,7 +178,7 @@
               <div class="card top-selling overflow-auto">
 
                 <div class="card-body pb-0">
-                  <h5 class="card-title">Experiencia laboral <span>| Empresa | Institución</span> </h5>
+                  <h5 class="card-title">Experiencia laboral</h5>
 
                   <table class="table table-borderless">
                     <thead>
@@ -192,36 +189,12 @@
                         <th scope="col">Fecha fin</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tabla-experiencia">
                       <tr>
                         <td><a href="#" class="text-primary fw-bold">Sura</a></td>
                         <td>Médico general</td>
                         <td>08/02/2005</td>
                         <td>12/09/2009</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Clinica Medical SAS</a></td>
-                        <td>Médico de ayuantia quirurgica</td>
-                        <td>01/10/2009</td>
-                        <td>24/03/2011</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">AXA Colpatria</a></td>
-                        <td>Médico general salas de cirugía/ayudante quirurgico</td>
-                        <td>30/03/2011</td>
-                        <td>07/08/2011</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Agencia de empleo Colsubsidio</a></td>
-                        <td>Instrumentador quirurgico</td>
-                        <td>11/11/2011</td>
-                        <td>31/10/2016</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Médico cirujano</a></td>
-                        <td>Clinica Compensar</td>
-                        <td>01/12/2016</td>
-                        <td>Actualidad</td>
                       </tr>
                     </tbody>
                   </table>
@@ -241,42 +214,14 @@
                   <table class="table table-borderless">
                     <thead>
                       <tr>
-                        <th scope="col">Empresa/Institución</th>
-                        <th scope="col">Cargo</th>
-                        <th scope="col">Fecha inicio</th>
-                        <th scope="col">Fecha fin</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tabla-proyectos">
                       <tr>
                         <td><a href="#" class="text-primary fw-bold">Sura</a></td>
                         <td>Médico general</td>
-                        <td>08/02/2005</td>
-                        <td>12/09/2009</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Clinica Medical SAS</a></td>
-                        <td>Médico de ayuantia quirurgica</td>
-                        <td>01/10/2009</td>
-                        <td>24/03/2011</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">AXA Colpatria</a></td>
-                        <td>Médico general salas de cirugía/ayudante quirurgico</td>
-                        <td>30/03/2011</td>
-                        <td>07/08/2011</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Agencia de empleo Colsubsidio</a></td>
-                        <td>Instrumentador quirurgico</td>
-                        <td>11/11/2011</td>
-                        <td>31/10/2016</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#" class="text-primary fw-bold">Médico cirujano</a></td>
-                        <td>Clinica Compensar</td>
-                        <td>01/12/2016</td>
-                        <td>Actualidad</td>
                       </tr>
                     </tbody>
                   </table>
@@ -293,7 +238,7 @@
         <div class="col-lg-4">
 
           <!-- Competencias -->
-          <div class="card">
+          <!-- <div class="card">
 
             <div class="card-body pb-0">
               <h5 class="card-title">Competencias</h5>
@@ -352,7 +297,8 @@
               </script>
 
             </div>
-          </div><!-- End Competencias -->
+          </div> -->
+          <!-- End Competencias -->
           
         </div><!-- End Right side columns -->
 
@@ -408,6 +354,8 @@
         console.error('Error al cargar la barra de navegación:', error);
     });
   </script>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
