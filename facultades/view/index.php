@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Profesores</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,83 +47,102 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Inicio</h1>
+      <h1>Facultades</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Universidades</a></li>
+          <li class="breadcrumb-item active">Facultades</li>
+        </ol>
+      </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
       <div class="row">
 
-        <!-- Left side columns -->
-        <div class="col-lg-12">
-          <div class="row">
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+                <div class="card-body pb-0">
+                  <h5 class="card-title"> <span>Universidad santiago de cali | Facultad de ingenieria | Listado de docentes</span></h5>
 
-            <!-- Sales Card -->
-            <div class="col-xxl-12 col-md-12 mb-4">
-              <img class="img-fluid rounded" src="../../assets/img/banner.jpg" alt="">
-            </div><!-- End Sales Card -->
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Profesores</th>
+                        <th scope="col">Materia(s)</th>
+                        <th scope="col">Calificación global</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="../../assets/img/p5.jpg" alt=""></a></th>
+                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php" class="text-primary fw-bold">Carlos Bermúdez Salazar</a></td>
+                        <td>Cirugía / Anatomía</td>
+                        <td class="fw-bold">4.1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="../../assets/img/messages-2.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">María Juanita</a></td>
+                        <td>Análisis de algoritmos</td>
+                        <td class="fw-bold">4.0</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="../../assets/img/messages-3.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Gonzalo Vicente</a></td>
+                        <td>Cálculo I / Cálculo II</td>
+                        <td class="fw-bold">4.5</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
 
           </div>
         </div><!-- End Left side columns -->
 
         <!-- Right side columns -->
-        <div class="col-lg-12">
-
-          <!-- News & Updates Traffic -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Funciones</span></h5>
+        <div class="card-body pb-0">
+              <h5 class="card-title">Proyectos de facultades </h5>
 
               <div class="news">
                 <div class="post-item clearfix">
-                  <img src="../../assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Visualizar universidades y facultades</a></h4>
-                  <p>En la aplicacion web podras visualizar las universidadar, su infomracion mas relevante y tambien sobre sus facultades.</p>
+                  <img src="../../assets/img/robot.jpg" alt="">
+                  <h4><a href="#">Ingenieria</a></h4>
+                  <p>Creacion de robot con inteligencia artificial... </p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="../../assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Visualizar profesores</a></h4>
-                  <p>Tambien podras visualizar los perfiles de los profesores sus puntuaciones e informacion mas relevante y de interes.</p>
+                  <img src="../../assets/img/venas.jpg" alt="">
+                  <h4><a href="#">Salud</a></h4>
+                  <p>Creacion de venas artificales...                 </p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="../../assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Comentar perfiles de profesores</a></h4>
-                  <p>Ademas tendras la posibilidad de poder aportar con tus comentarios.</p>
-                </div>
-
-                <!-- <div class="post-item clearfix">
-                  <img src="../../assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+                  <img src="../../assets/img/micro.png" alt="">
+                  <h4><a href="#">Economia</a></h4>
+                  <p>Emprendimiento de microempresas para exportar botellas reciclables... </p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="../../assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div> -->
+                  <img src="../../assets/img/aborto.jpg" alt="">
+                  <h4><a href="#">Leyes</a></h4>
+                  <p>Aprobacion de ley que permite el aborto a nivel regional... </p>
+                </div>
 
-              </div><!-- End sidebar recent posts-->
-
+                <div class="post-item clearfix">
+                  <img src="../../assets/img/drone.jpg" alt="">
+                  <h4><a href="#">Ingenieria</a></h4>
+                  <p>Creacion de drone que permite cargar 10kg para la innovacion de domicilios...</p>
+                </div>
             </div>
           </div><!-- End News & Updates -->
-
-        </div><!-- End Right side columns -->
-
       </div>
     </section>
 
@@ -158,14 +177,16 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
   <script>
-    const navbarContainer = document.getElementById('navbar-container');
+   const navbarContainer = document.getElementById('navbar-container');
 
-    // Usa la función fetch para cargar el archivo navbar.html
-    fetch('../../components/navBaritem.html')
+// Usa la función fetch para cargar el archivo navbar.html
+fetch('../../components/navBaritem.html')
     .then(response => response.text())
     .then(html => {
         // Inserta el contenido HTML en el contenedor
         navbarContainer.innerHTML = html;
+<<<<<<< HEAD:facultades/view/index.php
+=======
         const usuarioString = localStorage.getItem("usuario");
         menuItemIniciarSesion = document.getElementById("menu-item-iniciar-sesion");
         menuItemCerrarSesion = document.getElementById("menu-item-cerrar-sesion");
@@ -191,12 +212,12 @@
 
         const cerrarSesionBoton = document.getElementById("cerrar-sesion-boton");
         cerrarSesionBoton.addEventListener("click", cerrarSesion);
+>>>>>>> 481d2b8381e5c6d53b7b79ba08aeb8979559a19b:inicio/view/index.php
     })
     .catch(error => {
         console.error('Error al cargar la barra de navegación:', error);
     });
-  </script>
-
+</script>
 </body>
 
 </html>
