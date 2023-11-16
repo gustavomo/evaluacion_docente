@@ -185,6 +185,34 @@ fetch('../../components/navBaritem.html')
     .then(html => {
         // Inserta el contenido HTML en el contenedor
         navbarContainer.innerHTML = html;
+<<<<<<< HEAD:facultades/view/index.php
+=======
+        const usuarioString = localStorage.getItem("usuario");
+        menuItemIniciarSesion = document.getElementById("menu-item-iniciar-sesion");
+        menuItemCerrarSesion = document.getElementById("menu-item-cerrar-sesion");
+
+        if (usuarioString) {
+          const usuario = JSON.parse(usuarioString);
+
+          nombreUsuario = document.getElementById("nombre-usuario");
+          nombreUsuario.innerHTML = usuario.nombre;
+
+          menuItemIniciarSesion.style.display = "none"
+          menuItemCerrarSesion.style.display = "initial"
+        }
+        else {
+          menuItemIniciarSesion.style.display = "initial"
+          menuItemCerrarSesion.style.display = "none"
+        }
+
+        const cerrarSesion = () => {
+          localStorage.removeItem("usuario");
+          window.location.href = "";
+        }
+
+        const cerrarSesionBoton = document.getElementById("cerrar-sesion-boton");
+        cerrarSesionBoton.addEventListener("click", cerrarSesion);
+>>>>>>> 481d2b8381e5c6d53b7b79ba08aeb8979559a19b:inicio/view/index.php
     })
     .catch(error => {
         console.error('Error al cargar la barra de navegación:', error);
