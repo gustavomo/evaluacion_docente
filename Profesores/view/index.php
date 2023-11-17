@@ -90,20 +90,20 @@
                     <tbody>
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/p5.jpg" alt=""></a></th>
-                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php" class="text-primary fw-bold">Carlos Bermúdez Salazar</a></td>
+                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php?id=1" class="text-primary fw-bold">Carlos Bermúdez Salazar</a></td>
                         <td>Cirugía / Anatomía</td>
                         <td class="fw-bold">4.1</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/messages-2.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">María Juanita</a></td>
+                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php?id=2" class="text-primary fw-bold">María Juanita</a></td>
                         <td>Análisis de algoritmos</td>
                         <td class="fw-bold">4.0</td>
                         
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/messages-3.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Gonzalo Vicente</a></td>
+                        <td><a href="/evaluacion_docente/perfil_profesor/view/index.php?id=3" class="text-primary fw-bold">Gonzalo Vicente</a></td>
                         <td>Cálculo I / Cálculo II</td>
                         <td class="fw-bold">4.5</td>
                         <td></td>

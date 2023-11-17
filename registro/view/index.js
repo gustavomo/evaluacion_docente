@@ -2,8 +2,9 @@ const createUser = () => {
     const name = document.getElementById("yourName");
     const email = document.getElementById("yourEmail");
     const password = document.getElementById("yourPassword");
+    const rol = document.getElementById("rol");
 
-    if (!name.value || !email.value | password.value) {
+    if (!name.value || !email.value | !password.value | !rol.value) {
         return;
     }
 
@@ -11,6 +12,7 @@ const createUser = () => {
     form.append('nombre', name.value);
     form.append('email', email.value);
     form.append('contrasena', email.value);
+    form.append('rol', rol.value);
 
     axios.post('../controller/create_user.php', form)
         .then(function (response) {
