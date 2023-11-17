@@ -60,6 +60,15 @@
 
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="col-12">
+                      <label class="col-sm-2 col-form-label">Rol</label>
+                      <select id="rol" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar</option>
+                        <option value="2">Profesor</option>
+                        <option value="3">Estudiante</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
                       <label for="yourName" class="form-label">Su nombre</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
                       <div class="invalid-feedback">Por favor, ingresa tu nombre</div>

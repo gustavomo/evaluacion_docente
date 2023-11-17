@@ -7,15 +7,14 @@ class CrearUsuario {
         
     }
 
-    function insertarUsuario($nombre, $email, $contrasena) {
+    function insertarUsuario($nombre, $email, $contrasena, $rol) {
         try {
             // Comprobar si la solicitud es POST
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Obtener los datos enviados en la solicitud POST
                 $crud = new crud();
-                $sql = "INSERT INTO usuarios (id_roles, nombre, correo_electronico, contrasena, id_facultad) VALUES (1, '$nombre', '$email', '$contrasena', 1)";
+                $sql = "INSERT INTO usuarios (id_roles, nombre, correo_electronico, contrasena, id_facultad) VALUES ($rol, '$nombre', '$email', '$contrasena', 1)";
                 $response =  $crud ->insertar($sql);
-
             } else {
                 // Si no es una solicitud POST, devolver un mensaje de error
                 header('HTTP/1.1 405 Method Not Allowed');
@@ -36,4 +35,4 @@ class CrearUsuario {
 // Crear una instancia de la clase 'crud'
 $CrearUsuario = new CrearUsuario();
 // Llamar a la función 'insertarUsuario' para manejar la solicitud POST
-$CrearUsuario->insertarUsuario($_POST['nombre'], $_POST['email'], $_POST['contrasena']);
+$CrearUsuario->insertarUsuario($_POST['nombre'], $_POST['email'], $_POST['contrasena'], $_POST['rol']);
