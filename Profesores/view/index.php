@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -61,14 +55,14 @@
       <div class="row">        
 
         <!-- foto universidad -->
-          <div>
-                <div class="card photo">
-                    <div class="card-body pb-0">
-                        <h5 class="card-title">Universidad Santiago de Cali</h5>
-                        <img src="../../assets/img/usc.png" width="100%">
-                    </div>
+          <div id="universidad-logo">
+            <div class="card photo">
+                <div class="card-body pb-0 d-flex flex-column align-items-center">
+                    <h5 id="universidad-name" class="card-title">Universidad Santiago de Cali</h5>
+                    <img id="universidad-url" src="../../assets/img/usc.png" width="50%">
                 </div>
-              </div>
+            </div>
+          </div>
         <!-- End foto universidad -->
 
             <!-- Top Selling -->
@@ -82,12 +76,11 @@
                       <tr>
                         <th scope="col"></th>
                         <th scope="col">Profesores</th>
-                        <th scope="col">Materia(s)</th>
+                        <th scope="col">Habilidad(es)</th>
                         <th scope="col">Calificación global</th>
-                       
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tabla-profesores">
                       <tr>
                         <th scope="row"><a href="#"><img src="../../assets/img/p5.jpg" alt=""></a></th>
                         <td><a href="/evaluacion_docente/perfil_profesor/view/index.php?id=1" class="text-primary fw-bold">Carlos Bermúdez Salazar</a></td>
@@ -156,19 +149,21 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
   <script>
-   const navbarContainer = document.getElementById('navbar-container');
+    const navbarContainer = document.getElementById('navbar-container');
 
-// Usa la función fetch para cargar el archivo navbar.html
-fetch('../../components/navBaritem.html')
-    .then(response => response.text())
-    .then(html => {
-        // Inserta el contenido HTML en el contenedor
-        navbarContainer.innerHTML = html;
-    })
-    .catch(error => {
-        console.error('Error al cargar la barra de navegación:', error);
-    });
-</script>
+    // Usa la función fetch para cargar el archivo navbar.html
+    fetch('../../components/navBaritem.html')
+        .then(response => response.text())
+        .then(html => {
+            // Inserta el contenido HTML en el contenedor
+            navbarContainer.innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error al cargar la barra de navegación:', error);
+        });
+  </script>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
